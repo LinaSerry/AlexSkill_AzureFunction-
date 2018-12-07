@@ -1,8 +1,5 @@
 # AlexaSkill_AzureFunction
 This Azure function will allow you to interact with your bot using Alexa. 
-```
-dotnet add package Alexa.NET
-```
 
 ### To Run the Azure Function locally: 
 Add the URL and Headers to local.Settings.json and ensure that the Nuget package Alexa.NET is installed. 
