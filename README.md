@@ -1,6 +1,7 @@
 # AlexaSkill_AzureFunction
 This Azure function will allow you to interact with your bot using Alexa.
-To Run the Azure Function locally: 
+
+### To Run the Azure Function locally: 
 Add the URL and Headers to local.Settings.json
 ```
 {
@@ -17,6 +18,11 @@ Add the URL and Headers to local.Settings.json
 ## Quick Deploy to Azure
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.svg)](https://azuredeploy.net/)
+
+### To run in Azure, run the ARM Template found in azuredeploy.json and then fill in the app settings with the following values:
+"HeaderName" - header required for your POST request, 
+"Value" - value of the header,
+"Url" - the URL you are creating a POST request to
 
 ### To Create an Alexa Skill 
 Follow [this blog post](https://blogs.msdn.microsoft.com/appconsult/2018/11/02/build-your-first-alexa-skill-with-alexa-net-and-azure-functions-the-basics/)
