@@ -63,7 +63,7 @@ namespace AlexaSkill
                 //create a request to Azure Bot Framework 
                 HttpClient httpClient = new HttpClient();
                 HttpRequestMessage requestMessage = new HttpRequestMessage(HttpMethod.Post, Utilities.GetEnvironmentVariable("Url"));
-                requestMessage.Headers.Add(Utilities.GetEnvironmentVariable("HeaderName"), Utilities.GetEnvironmentVariable("Value"));
+                requestMessage.Headers.Add(Utilities.GetEnvironmentVariable("HeaderName"), Utilities.GetEnvironmentVariable("HeaderValue"));
                 requestMessage.Content = new StringContent(myjson, Encoding.UTF8, "application/json");
 
                 // Send the request to the server             

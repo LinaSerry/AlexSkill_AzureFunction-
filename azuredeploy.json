@@ -8,6 +8,24 @@
             "metadata": {
                 "description": "The name of the function app that you wish to create."
             }
+        },
+        "headerName": {
+            "type": "string",
+            "metadata": {
+                "description": "The header you need for your Bot."
+            }
+        },
+        "headerValue": {
+            "type": "string",
+            "metadata": {
+                "description": "Header value."
+            }
+        },
+        "url": {
+            "type": "string",
+            "metadata": {
+                "description": "URL of your bot service."
+            }
         }
     },
     "variables": {
@@ -82,15 +100,15 @@
                         },
                         {
                             "name": "HeaderName",
-                            "value": ""
+                            "value": "[parameters('headerName')]"
                         },
                         {
                             "name": "HeaderValue",
-                            "value": ""
+                            "value": "[parameters('headerValue')]"
                         },
                         {
                             "name": "Url",
-                            "value": ""
+                            "value": "[parameters('url')]"
                         }
 
 
