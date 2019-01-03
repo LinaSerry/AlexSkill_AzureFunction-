@@ -41,7 +41,7 @@ namespace AlexaSkill
             if (requestType == typeof(LaunchRequest)){
 
                 //here we could call the API and return the ans as a SkillResponse Object. 
-                response = ResponseBuilder.Tell("Welcome to the Art of Possible");
+                response = ResponseBuilder.Tell("Welcome to the Art of the Possible");
                 
                 //alexa won't close the session, waiting for other commands to send to the same skill. 
                 response.Response.ShouldEndSession = false;
